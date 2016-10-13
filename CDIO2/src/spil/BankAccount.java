@@ -28,6 +28,19 @@ public class BankAccount {
 			this.balance = this.balance + amount;		
 	}
 	
+	public void Deposit(int amount){
+		
+	}
+	public void Withdraw(int amount){
+		
+	}
+	public int getBalance() 
+	{
+		return this.balance;
+	}
+	
+	
+	
 	
 	
 
