@@ -1,57 +1,80 @@
 package spil;
 
-public class Player {
+public class Player{
 	
 	private int points = 0;
-	private String name;
+	private String playerName;
+	private BankAccount bankAccount;
+	private int id;
+	private int nextId;
 	
-	public Player() {}
-
 	/**
-	 * Gets point on player object
-	 * @return int
+	 * Create a new Bank Account for a new player
+	 * @set Player banck account to 1000 for the first time
 	 */
-	public int getPoints() {
-		return points;
+	public Player() {
+		
+		bankAccount = new BankAccount(1000);
+		
 	}
-
-	/**
-	 * Sets points on player object
-	 * @param points int
-	 */
-	public void setPoints(int points) {
-		this.points = points;
+	
+	public BankAccount getBankAccount()
+	{
+		return bankAccount;
 	}
-
-	/**
-	 * Appends point on player object
-	 * @param points int
-	 */
-	public void addPoints(int points) {
-		this.points = this.points + points;
+	
+	public String getplayerName() {
+		return playerName;
 	}
+	
+	public int getID() {
+	return id;
+}
+	
+	
+	
+	
+//	public String toString() {
+//		return name + " har nu " + points + " points.\n";
+//	}
+	
 
+//	/**
+//	 * Gets point on player object
+//	 * @return int
+//	 */
+//	public int getPoints() {
+//		return points;
+//	}
+
+//	/**
+//	 * Sets points on player object
+//	 * @param points int
+//	 */
+//	public void setPoints(int points) {
+//		this.points = points;
+//	}
+//
+//	/**
+//	 * Appends point on player object
+//	 * @param points int
+//	 */
+//	public void addPoints(int points) {
+//		this.points = this.points + points;
+//	}
+
+	
 	/**
 	 * Returns player name from player object
 	 * @return String
 	 */
-	public String getName() {
-		return name;
-	}
 
-	/**
-	 * Sets player name on player object
-	 * @param name String
-	 */
-	public void setName(String name) {
-		this.name = name;
-	}
+
+
 
 	/**
 	 * Prints player name and points. Overrides default toString method
 	 * @return String
 	 */
-	public String toString() {
-		return name + " har nu " + points + " points.\n";
-	}
+
 }
