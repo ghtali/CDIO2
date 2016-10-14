@@ -2,7 +2,6 @@ package spil;
 
 public class Player{
 
-	private int points = 0;
 	private String playerName;
 	private BankAccount bankAccount; // instead of Bank I used BankAccount
 	private int id; // I suggest that we use the ID in the GAmeboard
@@ -46,47 +45,4 @@ public class Player{
 
 
 
-	//	public String toString() {
-	//		return name + " har nu " + points + " points.\n";
-	//	}
-
-
-	//	/**
-	//	 * Gets point on player object
-	//	 * @return int
-	//	 */
-	//	public int getPoints() {
-	//		return points;
-	//	}
-
-	//	/**
-	//	 * Sets points on player object
-	//	 * @param points int
-	//	 */
-	//	public void setPoints(int points) {
-	//		this.points = points;
-	//	}
-	//
-	//	/**
-	//	 * Appends point on player object
-	//	 * @param points int
-	//	 */
-	//	public void addPoints(int points) {
-	//		this.points = this.points + points;
-	//	}
-
-
-	/**
-	 * Returns player name from player object
-	 * @return String
-	 */
-
-
-
-
-	/**
-	 * Prints player name and points. Overrides default toString method
-	 * @return String
-	 */
-
-}
+	
